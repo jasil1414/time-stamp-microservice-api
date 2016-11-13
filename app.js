@@ -2,7 +2,7 @@ var express = require('express');
 var url = require('url');
 var app = express();
 
-app.set('port',(process.env.PORT||3000));
+var port = process.env.PORT||3000
 app.set('view engine', 'pug');
 app.set('views', './views');
 
@@ -42,4 +42,4 @@ app.get('/:date',function (req, res) {
       res.end(JSON.stringify(timeStampReturn(date))); // JSON response.
     }
   )
-app.listen(app.get('port'));
+app.listen(port);
