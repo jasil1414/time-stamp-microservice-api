@@ -5,8 +5,8 @@
 - If it does not contain a date or Unix timestamp, it returns null for those properties.
 
 ##Example Usage:
-####URL query for natural language:`localhost:3000/November%2010,%202016`
-####URL query for Unix time stamp: `localhost:3000/1450137600` 
+####URL query for natural language:`https://jasil1414-timestamp.herokuapp.com/November%2010,%202016`
+####URL query for Unix time stamp: `https://jasil1414-timestamp.herokuapp.com/1450137600` 
 
 ##Example Output:
 `{ unix: 1478736000, natural: "November 10, 2016" }`
